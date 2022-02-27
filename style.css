@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color:rgba(245, 245, 245, 0.9);
+    background-color:black;
+}
+.heading {
+    color:white;
+    font-family: 'Prata', serif;
+}
+h2 {
+    font-size:30px;
+}
+.main_header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:4rem;
+    padding:2rem 9rem 0rem 9rem;
+}
+.main_button {
+    height:3em;
+    width:10em;
+    color:black;
+    background-color:rgb(250, 231, 80);
+    font-family: 'Prata', serif;    
+    border:none;
+}
+.nav_item {
+    display:inline-block;
+    text-decoration:none;
+    color:rgba(245, 245, 245, 0.9);
+    padding:0.6em;
+    font-size:14px;
+}
+#ham_button {
+  border:none;
+  background-color:black;
+  display:none;
+}
+#cross_button {
+  display:none;
+}
+#menu_button {
+  display:none;
+}
+
+.main_section {
+    padding:0rem 9rem 0rem 9rem;
+}
+.sub_header {
+    width:55%;
+    margin-bottom:4rem;
+}
+.sub_header h1 {
+    font-size:2.5rem;
+}
+.companies {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-bottom:4rem;
+}
+.examples {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:4rem;
+}
+.examples div {
+    width:45%;
+}
+
+.examples h2{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.about_me {
+    background-color:rgb(45, 48, 55);
+    padding:4rem 9rem 4rem 9rem;
+    display:flex;
+    justify-content:space-between;
+}
+.part {
+    width:45%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    row-gap:2rem;
+}
+
+.contact {
+     padding:4rem 9rem 4rem 9rem;
+     width:55%;
+}
+.contact p {
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+footer {
+     padding:1rem 9rem 1rem 9rem;    
+     background-color:rgb(45, 48, 55);
+     display:flex;
+     justify-content:space-between;
+}
+#linkedin_img {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+@media screen and (max-width:768px){
+  #top_button {
+    display:none;
+  }
+  #ham_button {
+    display:block;
+  }
+  .main_header {
+    padding:2rem ;
+    margin-bottom:0px;
+    height:5rem;
+  }
+  .nav_container{
+    position:fixed;
+    top:0;
+    right:0;
+    background-color:rgba(245,245,245,0.9);
+    width:100vw;
+    height:0%;
+    overflow-y:hidden;
+    transition:height 0.6s;
+  }
+  .nav_container ul {
+    display:flex;
+    flex-direction:column;
+    margin-top:5rem;
+  }
+  #cross_button {
+    display:block;
+    position:absolute;
+    top:25px;
+    right:30px;
+    border:none;
+    height:2rem;
+    width:2rem;
+    background-color:rgba(245,245,245,0.8);
+    border-radius:5px;
+  }
+  .nav_item {
+    color:black;
+    font-size:2rem;
+    font-weight:700;
+    margin:auto;
+  }
+  #menu_button{
+    display:block;
+    position:absolute;
+    bottom:1rem;
+  }
+  
+  .main_section {
+    padding:2rem;
+    margin-top:0px;
+  }
+  .sub_header {
+    width:100%;
+    margin-top:0;
+  }
+  .companies {
+    column-gap:4rem;
+    justify-content:space-around;
+    row-gap:2rem;
+    padding:2rem 4rem 2rem 4rem;
+  }
+  .examples {
+    flex-direction:column;
+    justify-content:space-between;
+    margin-bottom:0px;
+  }
+  .examples div {
+    width:100%;
+    margin-bottom:3rem;
+  }
+  #spence img {
+    width:100%;
+  }
+  #yelp img {
+    width:100%;
+  }
+  .about_me {
+    margin-top:0;
+    flex-direction:column;
+    padding:4rem 2rem 4rem 2rem;
+  }
+  .about_me div {
+    width:100%;
+  }
+  .contact {
+    padding:2rem;
+    width:100%;
+  }
+  .contact p {
+    width:65%;
+  }
+  footer {
+    padding:1rem 2rem;
+  }
+}
