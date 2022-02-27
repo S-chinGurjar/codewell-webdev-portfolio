@@ -116,7 +116,7 @@ footer {
     margin-right:10px;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
   #top_button {
     display:none;
   }
